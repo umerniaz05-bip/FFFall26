@@ -66,3 +66,22 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .chapters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .characters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+}
