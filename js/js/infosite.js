@@ -7,21 +7,30 @@ let summaryButton = document.getElementById("summaryButton");
 let chapters = document.querySelector(".chapters-grid");
 let summary = document.getElementById("storySummary");
 
-// Button 1: Change background and chapter text colors
 readingButton.addEventListener("click", function() {
-    document.querySelector("body").style.backgroundColor = "beige";
-    chapters.style.color = "#402010";
+    document.body.classList.toggle("reading-mode");
 });
 
-// Button 2: Add a CSS class to the chapter grid
 highlightButton.addEventListener("click", function() {
-    chapters.classList.add("chapter-highlight");
+    chapters.classList.toggle("chapter-highlight");
 });
 
-// Button 3: Display and style a summary
+let summaryVisible = false;
+
 summaryButton.addEventListener("click", function() {
-    summary.innerHTML = "<h3>Story Summary</h3><p>Wick Talon uses wit, deception, and humor to rise from the streets of the Drown into the political world of House Ashmar.</p>";
-    summary.style.backgroundColor = "lightyellow";
-    summary.style.fontSize = "20px";
-    summary.style.padding = "15px";
+    if (summaryVisible == false) {
+        summary.innerHTML = "<h3>Story Summary</h3><p>Wick Talon uses wit, deception, and humor to rise from the streets of the Drown into the political world of House Ashmar.</p>";
+        summary.style.backgroundColor = "lightyellow";
+        summary.style.fontSize = "20px";
+        summary.style.padding = "15px";
+        summary.style.display = "block";
+
+        summaryButton.innerHTML = "Hide Story Summary";
+        summaryVisible = true;
+    } else {
+        summary.style.display = "none";
+
+        summaryButton.innerHTML = "Reveal Story Summary";
+        summaryVisible = false;
+    }
 });
