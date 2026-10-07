@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the floating islands and colorful mysteries of The Cloudlight Carnival.">
+    <meta name="author" content="Umer Niaz">
+    <meta name="keywords" content="carnival, fantasy, floating islands, story">
+
+    <title>The Cloudlight Carnival</title>
+
+    <link rel="stylesheet" href="carnival.css">
+    <script src="carnival.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>The Cloudlight Carnival</h1>
+        <p class="center-text">Four islands. Four missing colors. One night to save the magic.</p>
+
+        <div class="center-text">
+            <button id="themeButton" type="button">Switch to Night Carnival</button>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <h2>Explore the Carnival</h2>
+            <ul>
+                <li><a href="#introduction">The Story</a></li>
+                <li><a href="#islands">The Four Islands</a></li>
+                <li><a href="#characters">Meet the Characters</a></li>
+                <li><a href="#secret">The Carnival's Secret</a></li>
+                <li><a href="#lantern">The Rainbow Lantern</a></li>
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="carnival-cover.jpg" alt="A colorful carnival on floating islands connected by rainbow bridges">
+            <figcaption class="center-text">Welcome to a world above the clouds.</figcaption>
+        </figure>
+    </header>
+
+    <main>
+        <section id="introduction" class="story-text">
+            <h2>A Carnival Above the Clouds</h2>
+            <p>Every summer, a traveling carnival appeared above the town of Bellweather. Its floating islands drifted through the sky, connected by rainbow bridges and guided by a golden lantern.</p>
+            <p>Seventeen-year-old mapmaker Milo had spent years drawing the carnival from his bedroom window. This year, he finally received a ticket. But when he arrived, the bridges were fading, the rides were slowing, and patches of the islands had turned gray.</p>
+            <p>Someone had stolen the four color crystals from the <strong class="highlight">Rainbow Lantern</strong>. Unless Milo recovered them before sunrise, the carnival would disappear—with everyone still aboard.</p>
+        </section>
+
+        <section id="islands">
+            <h2>Explore the Four Islands</h2>
+
+            <div class="islands-grid">
+                <section class="island-card">
+                    <h3>Roseberry Gardens</h3>
+                    <img src="roseberry-gardens.jpg" alt="Pink trees and enormous flowers beside a strawberry-colored river">
+                    <p>Pink trees grow cotton-candy blossoms, and rivers of strawberry soda wind between enormous flowers. Milo must follow a trail of colorless petals to find the rose crystal hidden inside a sleeping flower.</p>
+                    <p><strong>Missing crystal:</strong> Rose</p>
+                </section>
+
+                <section class="island-card">
+                    <h3>Tideglass Falls</h3>
+                    <img src="tideglass-falls.jpg" alt="Turquoise waterfalls flowing from a floating island beneath a glass bridge">
+                    <p>Turquoise waterfalls spill over the edge of a floating island and dissolve into clouds. Beneath a bridge of glass, a water spirit guards the blue crystal and asks Milo to return something the carnival has forgotten: silence.</p>
+                    <p><strong>Missing crystal:</strong> Blue</p>
+                </section>
+
+                <section class="island-card">
+                    <h3>Violet Moonfair</h3>
+                    <img src="violet-moonfair.jpg" alt="Purple carnival rides and a glowing Ferris wheel beneath tiny moons">
+                    <p>Purple roller coasters spiral around tiny moons, while glowing moths carry messages between the rides. The violet crystal is trapped on a Ferris wheel that only moves when someone tells the truth.</p>
+                    <p><strong>Missing crystal:</strong> Violet</p>
+                </section>
+
+                <section class="island-card">
+                    <h3>Sunspell Market</h3>
+                    <img src="sunspell-market.jpg" alt="A magical market with golden floating lanterns and colorful stalls">
+                    <p>Golden lanterns float above stalls selling bottled laughter, dancing scarves, and pocket-sized thunderstorms. Here, Milo discovers the yellow crystal being sold by a merchant who accepts memories instead of money.</p>
+                    <p><strong>Missing crystal:</strong> Yellow</p>
+                </section>
+            </div>
+        </section>
+
+        <section id="characters">
+            <h2>Meet the Characters</h2>
+
+            <div class="characters-grid">
+                <section class="character-card">
+                    <h3>Milo — The Mapmaker</h3>
+                    <p><strong>Age:</strong> 17</p>
+                    <p><strong>Home:</strong> Bellweather</p>
+                    <p>Curious and observant, but afraid of heights. His maps reveal paths that most visitors overlook. To save the carnival, he must finally explore the places he has only drawn.</p>
+                    <p><em>"A map is only the beginning of an adventure."</em></p>
+                </section>
+
+                <section class="character-card">
+                    <h3>Pip — The Lantern Fox</h3>
+                    <p><strong>Role:</strong> Milo's guide</p>
+                    <p><strong>Special ability:</strong> A glowing tail</p>
+                    <p>A small orange fox who knows every shortcut in the carnival. Pip is brave, playful, and easily distracted by sweets. His light grows weaker each time another color disappears.</p>
+                    <p><em>"Follow my tail. And bring snacks."</em></p>
+                </section>
+
+                <section class="character-card">
+                    <h3>Madame Marigold — The Carnival Keeper</h3>
+                    <p><strong>Role:</strong> Founder of the carnival</p>
+                    <p><strong>Treasure:</strong> A coat covered in old tickets</p>
+                    <p>The carnival's cheerful founder keeps a ticket from every year it has traveled. She knows why the crystals vanished but is frightened to admit her mistake.</p>
+                    <p><em>"I only wanted the magic to last forever."</em></p>
+                </section>
+            </div>
+        </section>
+
+        <section id="secret" class="story-text">
+            <h2>The Carnival's Secret</h2>
+            <p>As Milo explores the islands, he notices that every crystal has found a quiet place away from the crowds. Was someone really trying to destroy the carnival?</p>
+
+            <button id="secretButton" type="button" aria-expanded="false" aria-controls="secretText">Reveal the Secret</button>
+
+            <div id="secretText" hidden>
+                <p>The crystals were never stolen. Madame Marigold had kept the carnival running for a hundred years without letting its magic rest. The crystals scattered across the islands, searching for quiet places to recover.</p>
+                <p><strong class="highlight">Saving the carnival means allowing it to close until next summer.</strong></p>
+            </div>
+        </section>
+
+        <section id="lantern" class="story-text">
+            <h2>Relight the Rainbow Lantern</h2>
+            <p>With all four crystals recovered, Milo returns to the center of the carnival. There is just enough magic left to guide everyone home.</p>
+
+            <div id="rainbowLantern" class="lantern-box">
+                <p class="center-text">The Rainbow Lantern is waiting to shine.</p>
+            </div>
+
+            <button id="lanternButton" type="button">Light the Lantern</button>
+
+            <div id="ending" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="center-text">The Cloudlight Carnival — Created by Umer Niaz</p>
+        <p class="center-text"><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
